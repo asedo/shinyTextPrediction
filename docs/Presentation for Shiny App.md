@@ -42,11 +42,14 @@ Cool Features
 
 Links and URLs
 ========================================================
-This is a link to my github location
-[Link to github](https://github.com/asedo/shinyTextPrediction)
+This is a link to this presentation
+[Link to Arturo's shiny app](https://asedo.github.io/shinyTextPrediction/Presentation_for_Shiny_App.html) is [https://asedo.github.io/shinyTextPrediction/Presentation_for_Shiny_App.html](https://asedo.github.io/shinyTextPrediction/Presentation_for_Shiny_App.html)
 
 This is a link to my shiny app
-[Link to Arturo's shiny app](https://artse.shinyapps.io/TextPrediction4Fun/)
+[Link to Arturo's shiny app](https://artse.shinyapps.io/TextPrediction4Fun/) is [https://artse.shinyapps.io/TextPrediction4Fun/](https://artse.shinyapps.io/TextPrediction4Fun/)
 
-This is a link to this presentation
-[Link to Arturo's shiny app presentation](http://www.google.com)
+This is a link to my github location
+[Link to github](https://github.com/asedo/shinyTextPrediction) is [https://github.com/asedo/shinyTextPrediction](https://github.com/asedo/shinyTextPrediction)
+
+
+
