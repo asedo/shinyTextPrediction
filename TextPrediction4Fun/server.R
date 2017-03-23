@@ -13,6 +13,7 @@ function(input, output) {
   
   
     process.string = input$textvar
+    
     if(getLastChar(process.string) == " ") {lc.space = 1} else {lc.space = 0}
     # lc.space represents if the last character is space
     
@@ -20,12 +21,13 @@ function(input, output) {
       ## we will be predicting current word
       get.next.word = 0
     } else {get.next.word = 1}
-    #cat("process.string is :",process.string)
-    #cat("get.next.word is : ",get.next.word)
-    #cat("lc.space is : ",lc.space)
     
-    #If there is no space in the string, that means we are looking to predict current word with 1 ngram
-    if(!grepl(" ", process.string)){
+    
+    if(process.string == "") { 
+      output = ""
+      print(output)
+      #If there is no space in the string, that means we are looking to predict current word with 1 ngram
+      }else if(!grepl(" ", process.string)){
       output = grepstring(paste0("^",process.string), tdm_list[[1]]) 
       print(output)  
     } else {
