@@ -1,0 +1,23 @@
+---
+title: "Text Prediction Project - Capstone"
+author: "Art"
+date: "March 19, 2017"
+output: html_document
+---
+
+
+#Text Prediction using R's tm library
+The goal of this project is to understand how to use text prediction using R's tm library and package it in a nice web application using the Shiny server/UI capabilities. 
+When it comes to training models for text analytics, you tend to follow the same basic steps. 
+1. You read in lots of text data. In our case I used news, blog, and twitter files.  
+2. You build Corpus with a sample of the data 
+3. You clean the text so you can analyze it 
+4. Tokenize the corpus by building N-grams : (In this case we built 1 -5 Ngrams)  
+5. Remove sparce terms to make the matrix more manageable
+6. Count and sort the frequencies of words and create a Term Document Matrix or TDM for each of the  ngrams
+
+Once all above have been completed, you are done with the "Training" of the model. You esentially have a database with words and how often they are used together. So you can you run a grep on the first 4 words of the 5 ngram TDM, to find what the likely 5th word is. grep the first 2 words on the 3-gram TDM to get the most likely 3rd word and so forth.  This process is also known as the Katz Back-off method. Where you use the pre-built and sorted Term Document Matricies to identify what the next word most likely is. 
+
+
+
+This is the code I used to create the model, run predictions and see how accurate the model is by running a confusion matrix. 
